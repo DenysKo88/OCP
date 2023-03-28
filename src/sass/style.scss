@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap';
 
 @import 'base/variables';
-@import 'base/variables';
+@import 'base/mixins';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -32,3 +32,4 @@ li {
 @import 'blocks/button';
 @import 'blocks/promo';
 @import 'blocks/title';
+@import 'blocks/first';

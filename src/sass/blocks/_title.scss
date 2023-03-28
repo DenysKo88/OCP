@@ -4,6 +4,9 @@
     line-height: 68px;
     font-style: normal;
     color: #FFFFFF;
+    &_black {
+        color: $heading-text;
+    }
 }
 .title_fz20 {
     font-style: normal;

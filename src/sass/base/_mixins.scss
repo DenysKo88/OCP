@@ -1,0 +1,13 @@
+@mixin drop_arrow {
+    &:after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        opacity: 0.5;
+        top: 4px;
+        right: -1px;
+        position: absolute;
+        background: url('../icons/arrows/Color=White\,\ State=Default.svg'); 
+    }
+}
