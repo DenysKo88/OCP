@@ -6,6 +6,19 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+button,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -16,3 +29,6 @@
 }
 
 @import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/title';

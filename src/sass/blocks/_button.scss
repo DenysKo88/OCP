@@ -1,0 +1,30 @@
+.btn {
+    width: 136px;
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 4px;
+    line-height: 20px;
+    color: #2457B8;
+    &:hover, &:active, &:focus {
+        outline: none;
+    }
+    &_blue {
+        width: 63px;
+        height: 40px;
+        margin-right: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        background: #2457B8;
+    }
+    &_arrow {
+        width: 187px;
+        height: 50px;
+        border-radius: 4px;
+        margin-top: 30px;
+        font-style: normal;
+        font-size: 18px;
+    }
+}
