@@ -1,0 +1,20 @@
+.products {
+    min-height: 2704px;
+    gap: 30px;
+    &__first {
+        position: relative;
+        height: 154px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        background: linear-gradient(269.93deg, #2457B8 0.06%, #4171CC 99.95%);
+        &_title {
+            padding-bottom: 10px;
+        }
+        &_img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
