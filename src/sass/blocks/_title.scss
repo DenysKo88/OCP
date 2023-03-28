@@ -8,6 +8,16 @@
         color: $heading-text;
     }
 }
+.title_fz46 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    color: #FFFFFF;
+    &_black {
+        color: $heading-text;
+    }
+}
 .title_fz20 {
     font-style: normal;
     font-weight: 400;
@@ -15,11 +25,15 @@
     line-height: 28px;
     color: #FFFFFF;
     margin: 0;
+    &_black {
+        color: rgba(0, 0, 0, 0.8);
+    }
 }
-.title_fz46 {
+.title_fz18 {
     font-style: normal;
-    font-weight: 600;
-    font-size: 46px;
-    line-height: 56px;
-    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.8);
 }
+

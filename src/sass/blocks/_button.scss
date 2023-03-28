@@ -27,4 +27,20 @@
         font-style: normal;
         font-size: 18px;
     }
+    &_light {
+        width: 146px;
+        height: 50px;
+        background: #E0E7FC;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: #4671F6;
+        border: none;
+        &:hover, &:active, &:focus {
+            outline: none;
+        }
+    }
 }

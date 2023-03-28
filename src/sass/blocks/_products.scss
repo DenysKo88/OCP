@@ -17,4 +17,44 @@
             right: 0;
         }
     }
+    &__second {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        height: 460px;
+        width: 100%;
+        padding: 30px 30px 66px 30px;
+        background: #F2F4F8;
+        border-radius: 10px;
+        &_subtitle {
+            margin-top: 10px;
+            width: 500px;
+            min-height: 56px;
+        }
+        &_wrapper {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            column-gap: 30px;
+        }
+        &_item {
+            display: flex;
+            align-items: start;
+            gap: 14px;
+        }
+        &_feauture {
+            font-weight: 600;
+        }
+        &_descr {
+            margin-top: 2px;
+        }
+        &_btn {
+            margin-top: 30px;
+        }
+        &_bg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
 }
