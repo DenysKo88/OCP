@@ -60,4 +60,36 @@
             bottom: 0;
         }
     }
+    &__sixth {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        height: 460px;
+        width: 100%;
+        padding: 30px 30px 66px 30px;
+        background: #F2F4F8;
+        border-radius: 10px;
+        &_subtitle {
+            margin-top: 10px;
+            width: 500px;
+            min-height: 56px;
+        }
+        &_wrapper {
+            display: grid;
+            grid-template-columns: 630px;
+        }
+        &_item {
+            display: flex;
+            align-items: start;
+            gap: 14px;
+        }
+        &_btn {
+            margin-top: 30px;
+        }
+        &_bg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
 }
