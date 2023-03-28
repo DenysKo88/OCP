@@ -40,7 +40,7 @@
 }
 .main-header {
     height: 90px;
-    background-color: #2457B8;
+    background-color: $main-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,20 +63,58 @@
     &__menu {
         display: flex;
         align-items: center;
-        ul {
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-            list-style-type: none;
-            gap: 50px;
-        }
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+        gap: 50px;
         &_item {
             a {
+                display: block;
                 color: #fff;
                 &:hover {
                     color: #fff;
                     text-decoration: none;
+                }
+            }
+            &-drop {
+                position: relative;
+                padding-right: 16px;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    opacity: 0.5;
+                    top: 4px;
+                    right: -1px;
+                    position: absolute;
+                    background: url('../icons/arrows/Color=White\,\ State=Default.svg'); 
+                }
+                &:hover > &_list {
+                    display: block;
+                    transition: all .6s;
+                }
+                &_list {
+                    position: absolute;
+                    display: none;
+                    left: 0;
+                    width: 220px;
+                    background-color: #fff;
+                    list-style-type: none;
+                    border-radius: 4px;
+                    &_item {
+                        width: 100%;
+                        padding-left: 5px;
+                        a {
+                            color: $main-color;
+                            &:hover {
+                                color: $main-color;
+                            }
+                        }
+                    }
                 }
             }
         }

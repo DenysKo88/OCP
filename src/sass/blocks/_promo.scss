@@ -1,9 +1,8 @@
 .promo {
-    min-height: 660px;
+    min-height: 360px;
     background-color: #2457B8;
     &__wrapper {
         padding-top: 100px;
-        padding-bottom: 37px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -38,5 +37,10 @@
                 top: 19px;
             }
         }
+    }
+    &__lines {
+        img {
+            display: block;
+            width: 100%;     }
     }
 }
