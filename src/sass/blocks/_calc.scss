@@ -1,0 +1,30 @@
+.calc {
+    height: 660px;
+    padding: 100px 0 100px 0;
+    position: relative;
+    &__wrapper {
+        display: flex;
+    }
+    &__textblock {
+        width: 590px;
+        height: 454px;
+        &_descr {
+            margin-top: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1E1E1E;
+        }
+        &_btn {
+            margin-top: 30px;
+            width: 231px;
+            height: 50px;
+        }
+    }
+    &__ill {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
