@@ -1,6 +1,6 @@
 .interface {
     position: relative;
-    min-height: 1392px;
+    height: 1392px;
     padding: 90px 0 90px 0;
     background: linear-gradient(360deg, #5080E9 0%, #2457B8 100%);
     &__text {
@@ -15,33 +15,67 @@
             margin-bottom: 30px;
         }
     }
-    &__btn {
-        margin-top: 30px;
-    }
-    &__block {
+    &__carousel {
+        position: relative;
         margin-top: 100px;
-        width: 100%;
+        margin-bottom: 130px;
         height: 800px;
-        img {
-            filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.1));
-            border-radius: 10px;
+        width: 100%;
+        &_slides {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+    }
+    .slick-prev {
+        position: absolute;
+        bottom: 377px;
+        left: -70px;
+        opacity: 0.3;
+        width: 50px;
+        height: 50px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border: none;
+        &:hover, &:active, &:focus {
+            outline: none;
+        }
+
+    }
+    .slick-next {
+        position: absolute;
+        bottom: 377px;
+        opacity: 1.0;
+        width: 50px;
+        height: 50px;
+        right: -70px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border: none;
+        &:hover, &:active, &:focus {
+            outline: none;
         }
     }
-    &__scroll {
-        margin-top: 30px;
-        width: 100%;
+    .slick-dots {
         display: flex;
+        width: 88px;
+        justify-content: space-between;
+        margin-top: 30px;
         margin-left: calc(50% - 44px);
-        span {
+        button {
+            display: none;
+        }
+        li {
             display: block;
             width: 10px;
             height: 10px;
-            margin-right: 16px;
-            background: rgba(255, 255, 255, 0.2);
+            margin: 0;
             border-radius: 100%;
-            &:nth-child(1) {
-                background: #fff;
-            }
+            background: rgba(255, 255, 255, 0.2);
+        } 
+        .slick-active{
+            background: #FFFFFF;
         }
     }
 }
