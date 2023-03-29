@@ -1,0 +1,12 @@
+.document {
+    height: 540px;
+    padding: 100px 0 100px 0;
+    background: #FFFFFF;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        width: 690px;
+    }
+}
