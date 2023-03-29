@@ -17,8 +17,11 @@
             width: 100%;
         }
         &_social {
+            width: 234px;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
             a {
-                padding-right: 30px;
                 &:hover {
                     text-decoration: none;
                 }
