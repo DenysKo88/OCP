@@ -9,6 +9,44 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+    <div class="menu-adaptive">
+        <div class="menu-adaptive__block">
+            <div class="menu-adaptive__header">
+                <div class="menu-adaptive__logo"><img src="img/header/logotype_black.svg" alt="logo"></div>
+                <div class="menu-adaptive__close"><img src="icons/header/close.svg" alt="close"></div>
+            </div>   
+              
+            <div class="menu-adaptive__list">    
+                <nav>
+                    <ul class="menu-adaptive__content">
+                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
+                            <a href="#">Продукти</a>
+                            <ul class="menu-adaptive__content_item-drop_list">
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Cloud Instanse</a></li>
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Block Storage</a></li>
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Virtual Privat Cloud (VPC)</a></li>
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Firewall (FWaaS)</a></li>
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Load Balancer</a></li>
+                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Ціни</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
+                            <a href="#">Рішення</a></li>
+                        <li class="menu-adaptive__content_item">
+                            <a href="#">Ціни</a></li>
+                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
+                            <a href="#">Компанія</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-adaptive__buttons">
+                <button class="menu-adaptive__buttons_btn btn">Вхід</button>
+                <button class="menu-adaptive__buttons_btn menu-adaptive__buttons_btn-blue btn">Підключитися</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <section class="top-header">
             <div class="container">
@@ -35,7 +73,7 @@
                             <img src="img/header/logotype.svg" alt="logo">
                         </div>
                         <ul class="main-header__menu">
-                            <li class="main-header__menu_item main-header__menu_item-drop">
+                            <li id="products" class="main-header__menu_item main-header__menu_item-drop">
                                 <a href="#">Продукти</a>
                                 <ul class="main-header__menu_item-drop_list">
                                     <li class="main-header__menu_item-drop_list_item"><a href="#">Cloud Instanse</a></li>
@@ -62,6 +100,12 @@
                             <button class="btn main-header__btn">Підключитися</button>
                         </div>
                     </div>
+
+                    <div class="main-header__hamburger">
+                        <span></span>
+                        <span></span>
+                        <span class="tablet"></span>
+                    </div>
                 </div> 
             </div>
         </section>
@@ -70,11 +114,11 @@
         <div class="container">
             <div class="promo__wrapper">
                 <div class="promo__left">
-                    <h1 class="promo__title title_fz56">Хмарна платформа <br> для безперебійного <br> запуску</h1>
+                    <h1 class="promo__title title_fz56">Хмарна платформа для безперебійного запуску</h1>
                 </div>
                 <div class="promo__right">
                     <div class="promo__desr">
-                        <h2 class="title_fz20">Автоматизовано, просто і доступно кожному. <br> Почніть створювати свої круті цифрові <br> продукти прямо зараз.</h2>
+                        <h2 class="title_fz20">Автоматизовано, просто і доступно кожному. Почніть створювати свої круті цифрові продукти прямо зараз.</h2>
                         </div>
                     <button class="btn btn_arrow">Підключитися →</button>
                     <div class="promo__connect">або <a href="#">Зв’язатися з відділом продаж</a></div>
@@ -85,7 +129,7 @@
             <img src="img/header/Lines.jpg" alt="lines">
        </div>
     </section>
-    <section class="first">
+    <!-- <section class="first">
         <div class="container">
             <div class="first__wrapper">
                 <div class="first__left">
@@ -100,9 +144,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="products">
+    <!-- <section class="products">
         <div class="container">
             <div class="products__first">
                 <h2 class="products__first_title title_fz46">Cloud Compute</h2>
@@ -240,9 +284,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="interface">
+    <!-- <section class="interface">
         <div class="container">
             <div class="interface__text">
                 <h2 class="interface__title title_fz56">Інтуїтивно зрозумілий інтерфейс.
@@ -260,37 +304,10 @@
                 <div class="interface__carousel_slides"><img src="img/3_section/slide_3.png" alt="slide_3"></div>
                 <div class="interface__carousel_slides"><img src="img/3_section/slide_4.png" alt="slide_4"></div>
             </div>
-            <!-- <div class="interface__carousel">
-                <button class="btn_carousel"><img src="icons/3_section/right.svg" alt="next"></button>
-                <button class="btn_carousel btn_carousel_prev"><img src="icons/3_section/left.svg" alt="prev">
-                </button>
-
-                <div class="interface__carousel_inner">
-                    <div>
-                        <img src="img/3_section/block-storage.png" alt="slide_1">
-                    </div>
-                    <div>
-                        <img src="img/3_section/block-storage.png" alt="slide_2">
-                    </div>
-                    <div>
-                        <img src="img/3_section/block-storage.png" alt="slide_3">
-                    </div>
-                    <div>
-                        <img src="img/3_section/block-storage.png" alt="slide_4">
-                    </div>
-                </div>
-
-                <div class="interface__scroll">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div> -->
         </div>
-    </section>
+    </section> -->
 
-    <section class="document">
+    <!-- <section class="document">
         <div class="container">
             <div class="document__wrapper">
                 <div class="document__img">
@@ -299,9 +316,9 @@
                 <h2 class="document__title title_fz56 title_fz56_black">Докладна документація, яка допоможе вам створити та масштубувати вашу інфрастуктуру</h2>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="sixth">
+    <!-- <section class="sixth">
         <div class="container">
             <div class="sixth__wrapper">
                 <div class="sixth__item">
@@ -319,9 +336,9 @@
                 </article>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="calc">
+    <!-- <section class="calc">
         <div class="container">
             <div class="calc__wrapper">
                 <div class="calc__textblock">
@@ -335,9 +352,9 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__column">
@@ -413,7 +430,7 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

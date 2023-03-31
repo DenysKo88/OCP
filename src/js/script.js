@@ -9,3 +9,16 @@ $(document).ready(function(){
       nextArrow: '<button type="button" class="slick-next"><img src="../icons/3_section/right.svg"></button>'
     });
   });
+
+
+const hamburger = document.querySelector('.main-header__hamburger'),
+    menu = document.querySelector('.menu-adaptive'),
+    closeElem = document.querySelector('.menu-adaptive__close');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+    }); 
+
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});

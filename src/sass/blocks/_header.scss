@@ -125,5 +125,7 @@
         justify-content: space-between;
         align-items: center;
     }
-
+    &__hamburger {
+        display: none;
+    }
 }
