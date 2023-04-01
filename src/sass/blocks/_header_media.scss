@@ -26,6 +26,11 @@
             margin-top: 3px;
         }
     }
+    .main-header__menu_item-drop {
+        &:after {
+        top: 2px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .container {
