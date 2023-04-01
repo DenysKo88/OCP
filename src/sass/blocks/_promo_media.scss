@@ -11,26 +11,35 @@
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
-        margin: 0px auto;
     }
     .promo__wrapper {
         padding-top: 80px;
         display: block;
     }
+    .promo__left {
+        max-width: none;
+    }
+    .promo__title {
+        font-size: 52px;
+    }
     .promo__right {
-        width: 100%;
+        max-width: none;
     }
     .promo__desr {
         margin-top: 20px;
     }
     .promo__connect {
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+    }
+    .promo__connect-link {
         margin-top: 5px;
     }
 }
 @media (max-width: 768px) {
     .container {
-        width: 100%;
-        margin: 0px auto;
+        max-width: 100%;
         padding: 0 20px;
     }
     .promo__title {
@@ -40,5 +49,78 @@
     .promo__desr {
         margin-top: 24px;
     }
+    .promo__lines {
+        display: none;
+        &-tab {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .promo {
+        &__wrapper {
+            padding-top: 50px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+        &__btn {
+            margin-top: 20px;
+            width: 171px;
+            height: 44px;
+        }
+        &__connect {
+            display: block;
+            &-link {
+                margin-top: 20px;
+            }
+        }
 
+    }
+}
+@media (max-width: 428px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .promo {
+        padding-top: 10px;
+        &__title {
+        font-size: 24px;
+        line-height: 32px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+        &__subtitle {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &__connect-link {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+        }
+        &__lines {
+            &-tab {
+            display: none;
+            }
+            &-mob {
+                padding-top: 10px;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
