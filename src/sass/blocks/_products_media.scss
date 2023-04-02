@@ -1,0 +1,170 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .products {
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth {
+            min-height: 750px;
+            padding: 30px 30px 40px 30px;
+        }
+        &__sixth {
+            min-height: 650px;
+            padding: 30px 30px 40px 30px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .products {
+        &__first {
+            min-height: 300px;
+            padding: 30px 20px;
+            &_img {
+                display: none;
+                &-tab {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: calc(50% - 194px);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .title_fz46,
+    .title_fz46_black {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .products {
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth,
+        &__sixth {
+            &_bg {
+                left: calc(50% - 310px);
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .products {
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth,
+        &__sixth {
+            overflow: hidden;
+            &_wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            &_item {
+                max-width: 100%;
+            }
+            &_bg {
+                bottom: 0;
+                left: 125px
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .title_fz46,
+    .title_fz46_black {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .title_fz20,
+    .title_fz20_black {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .title_fz18 {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .products {
+        &__first {
+            min-height: 299px;
+            padding: 30px;
+            &_title {
+                padding-bottom: 8px;
+            }
+        }
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth,
+        &__sixth {
+            min-height: 793px;
+            padding: 30px;
+            overflow: hidden;
+            &_subtitle {
+                margin-top: 8px;
+            }
+            &_wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            &_bg {
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    }
+    .btn_light {
+        width: 135px;
+        height: 44px;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        z-index: 1;
+    }
+}
+@media (max-width: 428px) {
+    .products {
+        &__second,
+        &__third,
+        &__fourth,
+        &__fifth,
+        &__sixth {
+        &_bg {
+            display: none;
+            &_mob {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 293px;
+                }
+            }
+        }
+        &__second {
+            &_bg {
+                &_mob {
+                    top: 311px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,8 @@
 .products {
     min-height: 2704px;
-    gap: 30px;
     &__first {
         position: relative;
-        height: 154px;
+        min-height: 154px;
         width: 100%;
         padding: 30px;
         border-radius: 10px;
@@ -16,6 +15,9 @@
             top: 0;
             right: 0;
         }
+        &_img-tab {
+            display: none;
+        }
     }
     &__second,
     &__third,
@@ -24,25 +26,25 @@
         margin-top: 30px;
         margin-bottom: 30px;
         position: relative;
-        height: 460px;
+        min-height: 460px;
         width: 100%;
         padding: 30px 30px 66px 30px;
         background: #F2F4F8;
         border-radius: 10px;
         &_subtitle {
             margin-top: 10px;
-            width: 500px;
+            width: 100%;
             min-height: 56px;
         }
         &_wrapper {
             margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2, 300px);
-            column-gap: 30px;
+            display: flex;
+            gap: 30px;
         }
         &_item {
             display: flex;
             align-items: start;
+            max-width: 300px;
             gap: 14px;
         }
         &_feauture {
@@ -58,25 +60,34 @@
             position: absolute;
             right: 0;
             bottom: 0;
+            &_mob {
+                display: none;
+            }
         }
     }
+    .produts__fifth_title span{
+        color: #8B8F97;
+        font-weight: 400;
+    }
+    
     &__sixth {
         margin-top: 30px;
         margin-bottom: 30px;
         position: relative;
-        height: 460px;
+        min-height: 460px;
         width: 100%;
         padding: 30px 30px 66px 30px;
         background: #F2F4F8;
         border-radius: 10px;
         &_subtitle {
             margin-top: 10px;
-            width: 500px;
+            width: 100%;
             min-height: 56px;
         }
         &_wrapper {
-            display: grid;
-            grid-template-columns: 630px;
+            display: flex;
+            max-width: 630px;
+
         }
         &_item {
             display: flex;
@@ -90,6 +101,9 @@
             position: absolute;
             right: 0;
             bottom: 0;
+            &_mob {
+                display: none;
+            }
         }
     }
 }
