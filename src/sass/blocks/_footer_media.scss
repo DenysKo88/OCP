@@ -1,0 +1,81 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .footer {
+        min-height: 926px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto, 354px));
+            grid-template-rows: minmax(auto, 230px) minmax(auto, 244px), minmax(auto, 182px);
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+        &__contacts {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__help {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &__products {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        &__OCP {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        &__decision {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        &__lawyer {
+            grid-column: 2;
+            grid-row: 3;
+        }
+    }
+    .title_fz20_footer {
+        margin-top: 0;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 428px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .footer {
+        padding: 50px 0;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        &__decision {
+            margin-top: 0;
+        }
+    }
+}

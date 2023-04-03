@@ -1,13 +1,13 @@
 .calc {
-    height: 660px;
     padding: 100px 0 100px 0;
+    min-height: 660px;
     position: relative;
     &__wrapper {
         display: flex;
     }
     &__textblock {
-        width: 590px;
-        height: 454px;
+        max-width: 590px;
+        max-height: 454px;
         &_descr {
             margin-top: 30px;
             font-style: normal;
@@ -26,5 +26,11 @@
         position: absolute;
         top: 0;
         right: 0;
+        &-tab {
+            display: none;
+        }
+        &-mob {
+            display: none;
+        }
     }
 }

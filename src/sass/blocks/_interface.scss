@@ -1,16 +1,20 @@
 .interface {
     position: relative;
-    height: 1392px;
+    max-height: 1392px;
     padding: 90px 0 90px 0;
     background: linear-gradient(360deg, #5080E9 0%, #2457B8 100%);
     &__text {
-        height: 272px;
-        display: grid;
-        grid-template-columns: 690px 384px;
-        column-gap: 126px;
+        min-height: 272px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        max-width: 690px;
     }
     &__descr {
-        height: 140px;
+        max-width: 384px;
+        min-height: 140px;
         &_one {
             margin-bottom: 30px;
         }
@@ -19,10 +23,11 @@
         position: relative;
         margin-top: 100px;
         margin-bottom: 130px;
-        height: 800px;
-        width: 100%;
+        max-height: 800px;
+        max-width: 100%;
         &_slides {
             img {
+                width: 100%;
                 border-radius: 10px;
             }
         }

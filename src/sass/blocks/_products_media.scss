@@ -105,6 +105,7 @@
     }
     .products {
         &__first {
+            overflow: hidden;
             min-height: 299px;
             padding: 30px;
             &_title {
@@ -128,7 +129,7 @@
             }
             &_bg {
                 bottom: 0px;
-                left: 0px;
+                left: -75px;
             }
         }
     }
@@ -142,6 +143,10 @@
     }
 }
 @media (max-width: 428px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
     .products {
         &__second,
         &__third,

@@ -1,5 +1,5 @@
 .document {
-    height: 540px;
+    min-height: 540px;
     padding: 100px 0 100px 0;
     background: #FFFFFF;
     &__wrapper {
@@ -7,6 +7,11 @@
         justify-content: space-between;
     }
     &__title {
-        width: 690px;
+        max-width: 690px;
+    }
+    &__img {
+        img {
+            max-width: 100%;
+        }
     }
 }

@@ -1,0 +1,118 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+    .calc {
+        overflow: hidden;
+        &__ill {
+            top: 0%;
+            right: -50px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .calc {
+        min-height: 750px;
+        &__textblock {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        &__ill {
+            top: 50%;
+            right: 0;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .calc {
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+        }
+        &__ill {
+            top: 52%;
+            right: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .calc {
+        &__ill {
+            top: 430px;
+            left: 138px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .calc {
+        padding-top: 50px;
+        &__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        &__textblock {
+            &_descr {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &_btn {
+                width: 210px;
+                height: 44px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__ill {
+            top: 350px;
+            left: 0;
+        }
+    }
+}
+@media (max-width: 428px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .calc {
+        min-height: 769px;
+        padding-top: 50px;
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__textblock {
+            &_descr {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &_btn {
+                width: 210px;
+                height: 44px;
+            }
+        }
+        &__ill {
+            display: none;
+        }
+        &__ill-mob {
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
