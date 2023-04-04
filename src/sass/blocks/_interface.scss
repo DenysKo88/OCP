@@ -1,13 +1,10 @@
 .interface {
     position: relative;
-    max-height: 1392px;
     padding: 90px 0 90px 0;
     background: linear-gradient(360deg, #5080E9 0%, #2457B8 100%);
     &__text {
-        min-height: 272px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
     &__title {
         max-width: 690px;
@@ -24,7 +21,6 @@
         margin-top: 100px;
         margin-bottom: 130px;
         max-height: 800px;
-        max-width: 100%;
         &_slides {
             img {
                 width: 100%;
@@ -35,7 +31,7 @@
     }
     .slick-prev {
         position: absolute;
-        bottom: 377px;
+        bottom: 50%;
         left: -70px;
         opacity: 0.3;
         width: 50px;
@@ -50,7 +46,7 @@
     }
     .slick-next {
         position: absolute;
-        bottom: 377px;
+        bottom: 50%;
         opacity: 1.0;
         width: 50px;
         height: 50px;
@@ -83,4 +79,8 @@
             background: #FFFFFF;
         }
     }
+    &__descr_hidden {
+        display: none;
+    }
 }
+

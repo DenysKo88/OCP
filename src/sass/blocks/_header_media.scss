@@ -66,6 +66,9 @@
             }
         }
     }
+    .menu-adaptive {
+        z-index: 3;
+    }
 
 }
 @media (max-width: 576px) {

@@ -6,7 +6,22 @@ $(document).ready(function(){
       slidesToShow: 1,
       adaptiveHeight: false,
       prevArrow: '<button type="button" class="slick-prev"><img src="../icons/3_section/left.svg"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="../icons/3_section/right.svg"></button>'
+      nextArrow: '<button type="button" class="slick-next"><img src="../icons/3_section/right.svg"></button>',
+      responsive:[
+        {
+            breakpoint: 621,
+            settings: {
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                dots: false,
+                arrows: false
+            }
+        }
+        ]
     });
   });
 
