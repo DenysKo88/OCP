@@ -14,33 +14,28 @@
     <div class="menu-adaptive">
         <div class="menu-adaptive__block">
             <div class="menu-adaptive__header">
-                <div class="menu-adaptive__logo"><img src="img/header/logotype_black.svg" alt="logo"></div>
+                <div class="menu-adaptive__logo"><img src="img/header/logo-black.svg" alt="logo"></div>
                 <div class="menu-adaptive__close"><img src="icons/header/close.svg" alt="close"></div>
             </div>   
               
-            <div class="menu-adaptive__list">    
-                <nav>
-                    <ul class="menu-adaptive__content">
-                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
-                            <a href="#">Продукти</a>
-                            <ul class="menu-adaptive__content_item-drop_list">
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Cloud Instanse</a></li>
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Block Storage</a></li>
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Virtual Privat Cloud (VPC)</a></li>
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Firewall (FWaaS)</a></li>
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Load Balancer</a></li>
-                                <li class="menu-adaptive__content_item-drop_list_item"><a href="#">Ціни</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
-                            <a href="#">Рішення</a></li>
-                        <li class="menu-adaptive__content_item">
-                            <a href="#">Ціни</a></li>
-                        <li class="menu-adaptive__content_item menu-adaptive__content_item-drop">
-                            <a href="#">Компанія</a></li>
+
+            <ul class="menu">
+                <li class="menu__item menu__item-drop">
+                    <button class="menu__button menu__button-drop">Продукти</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Cloud Instance</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Block Storage</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Virtual Private Cloud (VPC)</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Firewall (FWaaS)</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Load Balancer</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Ціни</a></li>
                     </ul>
-                </nav>
-            </div>
+                </li>
+                <li class="menu__item menu__item-drop"><button class="menu__button menu__button-drop">Рішення</button></li>
+                <li class="menu__item"><button class="menu__button">Ціни</button></li>
+                <li class="menu__item menu__item-drop"><button class="menu__button menu__button-drop">Компанія</button></li>
+            </ul>
+
             <div class="menu-adaptive__buttons">
                 <button class="menu-adaptive__buttons_btn btn">Вхід</button>
                 <button class="menu-adaptive__buttons_btn menu-adaptive__buttons_btn-blue btn">Підключитися</button>
@@ -71,7 +66,7 @@
                 <div class="main-header__wrapper">
                     <div class="main-header__left">
                         <div class="main-header__logo">
-                            <img src="img/header/logotype.svg" alt="logo">
+                            <img src="img/header/logo-white.svg" alt="logo">
                         </div>
                         <ul class="main-header__menu">
                             <li id="products" class="main-header__menu_item main-header__menu_item-drop">
@@ -343,6 +338,7 @@
         </div>
     </section>
 
+
     <section class="document">
         <div class="container">
             <div class="document__wrapper">
@@ -402,7 +398,7 @@
                 
                     <div class="footer__contacts">
                         <div class="footer__contacts_logo">
-                            <img src="img/header/logotype.svg" alt="logo">
+                            <img src="img/header/logo-white.svg" alt="logo">
                         </div>
                         <div class="footer__contacts_social">
                             <a href="#">
@@ -474,7 +470,7 @@
         </div>
     </footer>
 
-    
+
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>

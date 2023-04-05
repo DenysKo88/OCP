@@ -37,3 +37,30 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+document.querySelectorAll(".menu__button-drop").forEach(button => {
+    button.addEventListener('click', function(event) {
+        document.querySelectorAll('.menu__item').forEach(item => {
+            if (item.querySelector('.menu__button-drop') !== button) {
+                item.classList.remove('menu__item_open');
+            }
+        })
+        event._isClick == true
+
+        button.parentElement.classList.toggle('menu__item_open');
+    });
+});
+
+document.body.addEventListener('click', function(event) {
+    console.log(event.target.parentElement.classList.contains('menu__item_open'));
+
+    if (
+        event._isClick == true ||
+        event.target.classList.contains('menu__button-drop') == true ||
+        event.target.classList.contains('dropdown-menu') == true
+    ) return
+
+    document.querySelectorAll('.menu__item').forEach(item => {
+        item.classList.remove('menu__item_open');
+    });
+});
