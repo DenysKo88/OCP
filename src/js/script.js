@@ -37,7 +37,7 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
-
+//for menu-adaptive
 document.querySelectorAll(".menu__button-drop").forEach(button => {
     button.addEventListener('click', function(event) {
         document.querySelectorAll('.menu__item').forEach(item => {
@@ -62,5 +62,33 @@ document.body.addEventListener('click', function(event) {
 
     document.querySelectorAll('.menu__item').forEach(item => {
         item.classList.remove('menu__item_open');
+    });
+});
+
+//for main-header__menu
+document.querySelectorAll(".main-header__menu_button-drop").forEach(button => {
+    button.addEventListener('click', function(event) {
+        document.querySelectorAll('.main-header__menu_item').forEach(item => {
+            if (item.querySelector('.main-header__menu_button-drop') !== button) {
+                item.classList.remove('main-header__menu_item-open');
+            }
+        })
+        event._isClick == true
+
+        button.parentElement.classList.toggle('main-header__menu_item-open');
+    });
+});
+
+document.body.addEventListener('click', function(event) {
+    console.log(event.target.parentElement.classList.contains('main-header__menu_item-open'));
+
+    if (
+        event._isClick == true ||
+        event.target.classList.contains('main-header__menu_button-drop') == true ||
+        event.target.classList.contains('main-header__dropdown') == true
+    ) return
+
+    document.querySelectorAll('.main-header__menu_item').forEach(item => {
+        item.classList.remove('main-header__menu_item-open');
     });
 });
