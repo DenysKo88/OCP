@@ -64,6 +64,11 @@
             span.tablet {
                 width: 13px;
             }
+            &-black {
+                span {
+                    background: #000;
+                }
+            }
         }
     }
     .menu-adaptive {

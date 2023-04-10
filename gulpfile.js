@@ -38,12 +38,16 @@ gulp.task('watch', function() {
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
 });
 
+
+
 gulp.task('html', function () {
     return gulp.src("src/*.html")
         .pipe(fileinclude())
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist/"));
 });
+
+
 
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")

@@ -52,6 +52,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &-white {
+        background-color: #fff;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -95,6 +98,12 @@
                     text-decoration: none;
                 }
             }
+            &-black {
+                color: #1E1E1E;
+                &:hover {
+                    color: $main-color;
+                }
+            }
             &-drop {
                 position: relative;
                 padding-right: 16px;
@@ -108,6 +117,11 @@
                     right: -1px;
                     position: absolute;
                     background: url('../icons/arrows/Color=White\,\ State=Default.svg'); 
+                }
+                &-black {
+                    &:after {
+                        background: url('../icons/arrows/Color=Black\,\ State=Default.svg');
+                    }
                 }
             }
         }
@@ -123,6 +137,7 @@
         background: #F7F7F7;
         border-radius: 4px;
         padding: 10px 15px;
+        z-index: 10;
         &_item {
             margin-top: 5px;
         }
@@ -164,4 +179,5 @@
     &__hamburger {
         display: none;
     }
+
 }

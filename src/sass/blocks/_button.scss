@@ -16,6 +16,10 @@
     &:focus {
         border: 1px solid rgba(255, 255, 255, 0.7);
     }
+    &_connect {
+        background: #4671F6;
+        color:#fff;
+    }
     &_blue {
         width: 63px;
         height: 40px;
@@ -34,8 +38,22 @@
             border: 1px solid $main-color;
             outline: none;
         }
-
-
+    }
+    &_white {
+        width: 63px;
+        height: 40px;
+        margin-right: 10px;
+        color: #4671F6;
+        background: #fff;
+        border: 1px solid rgba(70, 113, 246, 0.3);
+        border-radius: 4px;
+        &:hover {
+            transition: all .6s;
+            background: #FFFFFF;
+            color: $main-color;
+            border: 1px solid $main-color;
+            outline: none;
+        }
     }
     &_arrow {
         width: 187px;

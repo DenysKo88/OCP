@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+@@include('_header.html')
+@@include('_menu_adaptive.html')
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <ul class="breadcrumb">
+                    <li><a href="#">Головна</a></li>
+                    <li>Ціни</li>
+                </ul>
+                <h1 class="banner__title title_fz56 title_fz56_black">Просте та прозоре ціноутворення</h1>
+                <div class="banner__descr title_fz20 title_fz20_black">Замовити, підключити та налаштувати послуги можна в панелі керування, там же ви знайдете ціни на інші продукти компанії.</div>
+            </div>
+            <img src="img/prices/banner/background.svg" alt="bg" class="banner__bg">
+            <img src="img/prices/banner/bg-tab.png" alt="bg" class="banner__bg-tab">
+            <img src="img/prices/banner/bg_mobile.svg" alt="bg" class="banner__bg-mob">
+        </div>
+    </section>
+
+    <section class="cloud">
+        <div class="container">
+            <div class="cloud__wrapper">
+                <div class="cloud__left">
+                    <div class="cloud__bills">
+                        <div class="cloud__bills_title title_fz20 title_fz20_black">
+                            Виставлення рахунків
+                            <a href="#">
+                                <img src="icons/prices/1section/ic info.svg" alt="info" class="info-grey">
+                            </a>
+                        </div>
+                        <div class="cloud__bills_buttons">
+                            <button class="cloud__btn cloud__btn_blue">Погодинно</button>
+                            <button class="cloud__btn">Помісячно</button>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a href="#">Cloud Instances</a>
+                            </li>
+                            <li class="categories__item">
+                                <a href="#">Block Storage</a>
+                            </li>
+                            <li class="categories__item">
+                                <a href="#">Virtual Private Cloud (VPC)<a>
+                            </li>
+                            <li class="categories__item">
+                                <a href="#">Firewall (FWaaS)</a>
+                            </li>
+                            <li class="categories__item">
+                                <a href="#">Load Balancers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="cloud__right"></div>
+            </div>
+        </div>
+    </section>
+@@include('_footer.html')
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
