@@ -18,8 +18,11 @@
         }
         &_btn {
             margin-top: 30px;
-            width: 231px;
+            min-width: 231px;
             height: 50px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
         }
     }
     &__ill {

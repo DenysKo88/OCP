@@ -54,9 +54,11 @@
             font-size: 18px;
             line-height: 28px;
             width: 100%;
-            &:active, &:hover, &:focus {
-                outline: none;
-            }            
+            color:#000000;
+            &:hover {
+                text-decoration: none;
+                background-color: darken(#F7F7F7, 10%);
+            }
             &-drop {
                 &:after {
                     content: "";
@@ -137,9 +139,17 @@
             border: 1px solid rgba(70, 113, 246, 0.3);
             border-radius: 4px;
             color: #4671F6;
+            &:hover {
+                color:#fff;
+                background: #4671F6;
+            }
             &-blue {
                 color: #fff;
                 background: #4671F6;
+                &:hover {
+                    color:#4671F6;
+                    background: #fff;
+                }
             }
         }
     }

@@ -27,6 +27,9 @@
             color: #fff;
             text-decoration: none;
             position: relative;
+            &:hover {
+                color: #E0E7FC;
+            }
             &:after {
                 content: '';
                 position: absolute;

@@ -10,108 +10,10 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
-    <div class="menu-adaptive">
-        <div class="menu-adaptive__block">
-            <div class="menu-adaptive__header">
-                <div class="menu-adaptive__logo"><img src="img/header/logo-black.svg" alt="logo"></div>
-                <div class="menu-adaptive__close"><img src="icons/header/close.svg" alt="close"></div>
-            </div>   
-              
-
-            <ul class="menu">
-                <li class="menu__item menu__item-drop">
-                    <button class="menu__button menu__button-drop">Продукти</button>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Cloud Instance</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Block Storage</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Virtual Private Cloud (VPC)</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Firewall (FWaaS)</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Load Balancer</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Ціни</a></li>
-                    </ul>
-                </li>
-                <li class="menu__item menu__item-drop"><button class="menu__button menu__button-drop">Рішення</button></li>
-                <li class="menu__item"><button class="menu__button">Ціни</button></li>
-                <li class="menu__item menu__item-drop"><button class="menu__button menu__button-drop">Компанія</button></li>
-            </ul>
-
-            <div class="menu-adaptive__buttons">
-                <button class="menu-adaptive__buttons_btn btn">Вхід</button>
-                <button class="menu-adaptive__buttons_btn menu-adaptive__buttons_btn-blue btn">Підключитися</button>
-            </div>
-        </div>
-    </div>
-
-    <header>
-        <section class="top-header">
-            <div class="container">
-                <div class="top-header__wrapper">
-                    <div class="top-header__menu">
-                        <a href="#" class="top-header__menu_item">Підтримка</a>
-                        <a href="#" class="top-header__menu_item">Контакти</a>
-                    </div>
-                    <div class="top-header__language">
-                        <select class="top-header__language_select">
-                            <option>Українська</option>
-                            <option>English</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-header">
-            <div class="container">
-                <div class="main-header__wrapper">
-                    <div class="main-header__left">
-                        <div class="main-header__logo">
-                            <img src="img/header/logo-white.svg" alt="logo">
-                        </div>
+    @@include('_header.html')
 
 
-                        <ul class="main-header__menu">
-                            <li id="products" class="main-header__menu_item main-header__menu_item-drop">
-                                <button class="main-header__menu_button main-header__menu_button-drop">Продукти</button>
-                                <ul class="main-header__dropdown">
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Cloud Instanse</a></li>
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Block Storage</a></li>
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Virtual Privat Cloud (VPC)</a></li>
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Firewall (FWaaS)</a></li>
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Load Balancer</a></li>
-                                    <li class="main-header__dropdown_item"><a class="main-header__dropdown_link" href="#">Ціни</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-header__menu_item main-header__menu_item-drop">
-                                <button class="main-header__menu_button main-header__menu_button-drop">Рішення</button>
-                                </li>
-                            <li class="main-header__menu_item">
-                                <button class="main-header__menu_button"><a href="#">Ціни</a></button>
-                                </li>
-                            <li class="main-header__menu_item main-header__menu_item-drop">
-                                <button class="main-header__menu_button main-header__menu_button-drop">Компанія</button>
-                            </li>
-                        </ul>
 
-                    </div>
-
-
-                    <div class="main-header__right">
-                        <div class="main-header__buttons">
-                            <button class="btn btn_blue main-header__btn main-header__btn_blue ">Вхід</button>
-                            <button class="btn main-header__btn">Підключитися</button>
-                        </div>
-                    </div>
-
-                    <div class="main-header__hamburger">
-                        <span></span>
-                        <span></span>
-                        <span class="tablet"></span>
-                    </div>
-                </div> 
-            </div>
-        </section>
-    </header>
     <section class="promo">
         <div class="container">
             <div class="promo__wrapper">
@@ -344,7 +246,6 @@
         </div>
     </section>
 
-
     <section class="document">
         <div class="container">
             <div class="document__wrapper">
@@ -370,7 +271,7 @@
                 <article class="sixth__ask">
                     <img src="icons/6_section/ic_question.svg" alt="question" class="sixth__ask_img">
                     <div class="sixth__ask_descr">Задайте будь-яке питання про продукт, його налаштування, труднощі в роботі або неполадки. <br><br>Спеціалісти дадуть відповідь протягом 15 хвилин.</div>
-                    <button class="sixth__ask_btn btn">Задати питання</button>
+                    <button class="sixth__ask_btn btn_light">Задати питання</button>
                 </article>
             </div>
         </div>
@@ -404,7 +305,7 @@
                 
                     <div class="footer__contacts">
                         <div class="footer__contacts_logo">
-                            <img src="img/header/logo-white.svg" alt="logo">
+                            <a href="#"><img src="img/header/logo-white.svg" alt="logo"></a>
                         </div>
                         <div class="footer__contacts_social">
                             <a href="#">

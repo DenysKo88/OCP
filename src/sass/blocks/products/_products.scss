@@ -55,6 +55,10 @@
         }
         &_btn {
             margin-top: 30px;
+            &:hover {
+                color:#E0E7FC;
+                background: #4671F6;
+            }
         }
         &_bg {
             position: absolute;

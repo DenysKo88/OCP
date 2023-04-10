@@ -20,8 +20,8 @@
             font-size: 14px;
             line-height: 17px;
             &:hover{
-                text-decoration: none;
-                color: $heading-text;
+                color: $main-color;
+                background: darken(#F2F4F8, 10%);
             }
         }
     }
@@ -39,6 +39,10 @@
             appearance: none;
             background: url('../../icons/header/ic_arrow-down.svg') no-repeat right;
             padding-right: 16px;
+            &:hover{
+                color: $heading-text;
+                background: darken(#F2F4F8, 10%);
+            }
         }
     }
 }
@@ -80,9 +84,9 @@
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;
-            &:active, &:hover, &:focus {
-                outline: none;
-            }  
+            &:hover {
+                color:#fff;
+            }
             a {
                 display: block;
                 color: #fff;
