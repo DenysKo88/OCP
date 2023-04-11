@@ -1,0 +1,94 @@
+.table-item {
+    &__header {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(30, 30, 30, 0.5);
+    }
+    &__descr {
+        margin-top: 20px;
+    }
+
+    &__table {
+        width: 100%;
+        text-align: left;
+        thead {
+            background: linear-gradient(90deg, #4671F6 0%, #648AFF 100%);
+        }
+        th {
+            padding: 16px 10px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            span {
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        tr td:first-child {
+            color: #4671F6;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            width: 30%;
+        }
+        td {
+            border-bottom: 1px solid #E8E8E8;
+            padding: 20.5px 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $heading-text;
+            &:first-child {
+                padding-left: 20px;
+            }
+            span.price {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            span.per_hour {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        th:first-child {
+            padding-left: 20px;
+        }
+        td:last-child {
+            padding-right: 20px;
+        }
+        th:last-child {
+            padding-right: 20px;
+        }
+        &-responsive {
+            margin-top: 30px;
+            border: 1px solid #E8E8E8;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+    }
+    &__infosub {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #6C6C6C;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
