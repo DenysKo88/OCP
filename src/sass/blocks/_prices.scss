@@ -227,3 +227,16 @@
 .VPC {
     margin-top: 80px;
 }
+.firewall,
+.load {
+    .table-item {
+        margin-top: 80px;
+    }
+    &__free {
+        display: inline-block;
+        background: #F7F7F7;
+        border-radius: 8px;
+        padding: 14px;
+        margin-top: 20px;
+    }
+}

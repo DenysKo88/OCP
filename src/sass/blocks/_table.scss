@@ -114,6 +114,17 @@
             padding-bottom: 10px;
         }
     }
+    &-load {
+        tr td:first-child {
+            width: 25%;
+        }
+        tr td:nth-child(2) {
+            width: 25%;
+        }
+        tr td:nth-child(3) {
+            width: 25%;
+        }
+    }
     }
     &__infosub {
         margin-top: 10px;
