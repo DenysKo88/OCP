@@ -180,3 +180,50 @@
         }
     }
 }
+.storage {
+    &__wrapper {
+        margin-top: 80px;
+    }
+    &__table {
+        tr td:first-child {
+            width: 15%;
+        }
+    }
+}
+.IOPS {
+    padding: 10px;
+    background: #FCFBFC;
+    border-radius: 8px;
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $heading-text;
+    }
+    &__wrapper {
+        margin-top: 10px;
+        display: flex;
+        gap: 12px;
+    }
+    &__read,
+    &__rec {
+        &_descr {
+            margin-top: 5px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $heading-text;
+        }
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #6C6C6C;
+    }
+}
+.VPC {
+    margin-top: 80px;
+}

@@ -79,7 +79,41 @@
             border-radius: 10px;
             overflow-x: auto;
         }
-
+    &-storage {
+        tr td:first-child {
+            width: 14%;
+        }
+        tr td:nth-child(2) {
+            width: 33%;
+        }
+        tr td:nth-child(3) {
+            width: 32%;
+        }
+        td {
+            padding: 10px;
+        }
+    }
+    &-VPC {
+        tr td:first-child {
+            width: 24%;
+        }
+        tr td:nth-child(2) {
+            width: 16%;
+        }
+        tr td:nth-child(3) {
+            width: 19%;
+        }
+        tr td:nth-child(4) {
+            width: 19%;
+        }
+        td {
+            padding: 20px;
+        }
+        th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
     }
     &__infosub {
         margin-top: 10px;
