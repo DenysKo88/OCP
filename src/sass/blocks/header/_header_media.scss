@@ -70,6 +70,12 @@
                 }
             }
         }
+        &__logo {
+            display: none;
+            &-mob {
+                display: block;
+            }
+        }
     }
     .menu-adaptive {
         z-index: 3;

@@ -82,4 +82,40 @@
             transition: all .6s;
         }
     }
+    &_consult {
+        width: 253px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid rgba(70, 113, 246, 0.3);
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: $link-color;
+        @media (max-width: 428px) {
+            width: 229px;
+            height: 44px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &_connect-big {
+        width: 165px;
+        height: 50px;
+        background: $link-color;
+        border: none;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color:#fff;
+        @media (max-width: 428px) {
+            width: 151px;
+            height: 44px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 }

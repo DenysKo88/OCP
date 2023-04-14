@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Instance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_menu_adaptive.html')
+
+    <section class="banner cloud__banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <ul class="breadcrumb">
+                    <li><a href="#">Головна</a></li>
+                    <li>Cloud Instance</li>
+                </ul>
+                <h1 class="banner__title title_fz56 title_fz56_black">Cloud Instance</h1>
+                <div class="banner__descr title_fz20 title_fz20_black">Безпечні та потужні інстанси для підтримки ваших робочих навантажень та додатків</div>
+                <div class="cloud__banner_buttons">
+                    <button class="cloud__banner_btn btn_connect-big">Підключитися</button>
+                    <button class="btn_consult cloud__banner_btn">Отримати консультацію</button>
+                </div>
+            </div>
+            <img src="img/cloud_instance/cloud_banner_bg.svg" alt="bg" class="cloud__banner_bg">
+            <img src="img/cloud_instance/cloud_banner_bg-tab.svg" alt="bg" class="cloud__banner_bg-tab">
+            <img src="img/cloud_instance/cloud_banner_bg-mob.svg" alt="bg" class="cloud__banner_bg-mob">
+        </div>
+    </section>
+
+
+    @@include('_footer.html')
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

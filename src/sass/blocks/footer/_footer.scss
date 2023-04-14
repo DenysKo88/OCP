@@ -17,6 +17,9 @@
         justify-content: space-between;
         &_logo {
             max-width: 100%;
+            &-mob {
+                display: none;
+            }
         }
         &_social {
             width: 234px;

@@ -1,0 +1,47 @@
+.cloud {
+    &__banner{
+        min-height: 427px;
+        @media (max-width: 768px) {
+            min-height: 720px;
+        }
+        @media (max-width: 428px) {
+            min-height: 650px;
+        }
+        &_buttons {
+            display: flex;
+            gap: 10px;
+        }
+        &_bg {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            &-tab{
+                display: none;
+                @media (max-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                }
+                @media (max-width: 428px) {
+                    display: none;
+                }
+            }
+            &-mob {
+                display: none;
+                @media (max-width: 428px) {
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    
+}

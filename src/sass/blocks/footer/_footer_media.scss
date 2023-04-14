@@ -30,6 +30,12 @@
         &__contacts {
             grid-column: 1;
             grid-row: 1;
+            &_logo {
+                display: none;
+                &-mob {
+                    display: block;
+                }
+            }
         }
         &__help {
             grid-column: 2;
