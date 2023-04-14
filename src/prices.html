@@ -30,6 +30,20 @@
     </section>
 
     <section class="cloud">
+        
+    <div class="cloud__bills-out">
+        <div class="cloud__bills_title">
+            Виставлення рахунків
+            <a href="#">
+                <img src="icons/prices/1section/ic info.svg" alt="info" class="info-grey">
+            </a>
+        </div>
+        <div class="cloud__bills_buttons">
+            <button class="cloud__btn cloud__btn_blue">Погодинно</button>
+            <button class="cloud__btn">Помісячно</button>
+        </div>
+    </div>
+        
         <div class="container">
             <div class="cloud__wrapper">
                 <div class="cloud__left">
@@ -46,36 +60,45 @@
                         </div>
                     </div>
                 
-                    <div class="categories">
+                    <nav class="categories">
                         <ul class="categories__list">
                             <li class="categories__item">
-                                <a href="#">Cloud Instances</a>
+                                <a href="#cloudcompute">Cloud Instances</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#">Block Storage</a>
+                                <a href="#blockstorage">Block Storage</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#">Virtual Private Cloud (VPC)<a>
+                                <a href="#vpc">Virtual Private Cloud (VPC)<a>
                             </li>
                             <li class="categories__item">
-                                <a href="#">Firewall (FWaaS)</a>
+                                <a href="#firewall">Firewall (FWaaS)</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#">Load Balancers</a>
+                                <a href="#load">Load Balancers</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
+                    <div class="categories-select_title">Вибрати продукт</div>
+                    <select class="categories-select">
+                        <option value="Cloud Instances">Cloud Instances</option>
+                        <option value="Block Storage">Block Storage</option>
+                        <option value="Virtual Private Cloud (VPC)">Virtual Private Cloud (VPC)</option>
+                        <option value="Firewall (FWaaS)">Firewall (FWaaS)</option>
+                        <option value="Load Balancers">Load Balancers</option>
+                    </select>
                 </div> 
                 <div class="cloud__right">
                     <div class="table-item">
                         <div class="table-item__header">
                             <div class="table-item__icon"><img src="icons/prices/1section/cloud_compute.svg" alt="cloud_compute"></div>
+                            <div class="table-item__icon-mob"><img src="icons/prices/1section/cloud_mob.svg" alt="cloud_mob"></div>
                             <div class="table-item__title-wrapper">
-                                <div class="table-item__subtitle">Cloud Compute</div>
-                                <div class="table-item__title title_fz46 title_fz46_black">Cloud Instances</div>
+                                <div class="table-item__subtitle" id="cloudcompute">Cloud Compute</div>
+                                <div class="table-item__title">Cloud Instances</div>
                             </div>
                         </div>
-                        <div class="table-item__descr title_fz18">Ми надаємо безпечні, потужні інстанси зі змінним розміром для підтримки будь-яких робочих навантажень або програм. Типи інстансів складаються з комбінації ЦП, пам’яті та пропускної здатності мережі.
+                        <div class="table-item__descr">Ми надаємо безпечні, потужні інстанси зі змінним розміром для підтримки будь-яких робочих навантажень або програм. Типи інстансів складаються з комбінації ЦП, пам’яті та пропускної здатності мережі.
                         </div>
                         <div class="table-item__table-responsive">
                             <table class="table-item__table">
@@ -143,7 +166,7 @@
                         </div>
                         
                         <div class="table-item__infosub">
-                            <img src="icons/prices/1section/icon_blue.svg" alt="info">
+                            <a href="#"><img src="icons/prices/1section/icon_blue.svg" alt="info"></a>
                             Ціна у гривнях за курсом НБУ на момент покупки
                         </div>
                         
@@ -153,12 +176,13 @@
                         <div class="table-item">
                             <div class="table-item__header">
                                 <div class="table-item__icon"><img src="icons/prices/2section/block_storage.svg" alt="block_storage"></div>
+                                <div class="table-item__icon-mob"><img src="icons/prices/2section/block_mob.svg" alt="block_mob"></div>
                                 <div class="table-item__title-wrapper">
-                                    <div class="table-item__subtitle">Block Storage</div>
-                                    <div class="table-item__title title_fz46 title_fz46_black">Block Storage</div>
+                                    <div class="table-item__subtitle" id="blockstorage">Block Storage</div>
+                                    <div class="table-item__title">Block Storage</div>
                                 </div>
                             </div>
-                            <div class="table-item__descr title_fz18">Збільшуйте обсяг доступного дискового простору за потреби, підключаючи додаткові блочні пристрої до хмарного сервера.
+                            <div class="table-item__descr">Збільшуйте обсяг доступного дискового простору за потреби, підключаючи додаткові блочні пристрої до хмарного сервера.
                             </div>
                             <div class="table-item__table-responsive">
                                 <table class="table-item__table table-item__table-storage">
@@ -227,7 +251,7 @@
                             </div>
                             
                             <div class="table-item__infosub">
-                                <img src="icons/prices/1section/icon_blue.svg" alt="info">
+                                <a href="#"><img src="icons/prices/1section/icon_blue.svg" alt="info"></a>
                                 Ціна у гривнях за курсом НБУ на момент покупки
                             </div>
                             
@@ -238,12 +262,13 @@
                         <div class="table-item">
                             <div class="table-item__header">
                                 <div class="table-item__icon"><img src="icons/prices/3section/VPC.svg" alt="VPC"></div>
+                                <div class="table-item__icon-mob"><img src="icons/prices/3section/vpc_mob.svg" alt="vpc_mob"></div>
                                 <div class="table-item__title-wrapper">
-                                    <div class="table-item__subtitle">Networks</div>
-                                    <div class="table-item__title title_fz46 title_fz46_black">Virtual Private Cloud (VPC)</div>
+                                    <div class="table-item__subtitle" id="vpc">Networks</div>
+                                    <div class="table-item__title">Virtual Private Cloud (VPC)</div>
                                 </div>
                             </div>
-                            <div class="table-item__descr title_fz18">Підвищений рівень безпеки та ізоляції інфраструктури у хмарі
+                            <div class="table-item__descr">Підвищений рівень безпеки та ізоляції інфраструктури у хмарі
                             </div>
                             <div class="table-item__table-responsive">
                                 <table class="table-item__table table-item__table-VPC">
@@ -269,7 +294,7 @@
                             </div>
                             
                             <div class="table-item__infosub">
-                                <img src="icons/prices/1section/icon_blue.svg" alt="info">
+                                <a href="#"><img src="icons/prices/1section/icon_blue.svg" alt="info"></a>
                                 Ціна у гривнях за курсом НБУ на момент покупки
                             </div>
                             
@@ -280,26 +305,28 @@
                         <div class="table-item">
                             <div class="table-item__header">
                                 <div class="table-item__icon"><img src="icons/prices/4section/Firewall.svg" alt="Firewall"></div>
+                                <div class="table-item__icon-mob"><img src="icons/prices/4section/firewall_mob.svg" alt="firewall_mob"></div>
                                 <div class="table-item__title-wrapper">
-                                    <div class="table-item__subtitle">Networks</div>
-                                    <div class="table-item__title title_fz46 title_fz46_black">Firewall (FWaaS)</div>
+                                    <div class="table-item__subtitle" id="firewall">Networks</div>
+                                    <div class="table-item__title">Firewall (FWaaS)</div>
                                 </div>
                             </div>
-                            <div class="table-item__descr title_fz18">Захистіть свої дані від кібератак та витоків. Налаштуйте правила Firewall так, щоб небажаний трафік фільтрувався запобігаючи ризику несанкціонованого доступу.</div>
+                            <div class="table-item__descr">Захистіть свої дані від кібератак та витоків. Налаштуйте правила Firewall так, щоб небажаний трафік фільтрувався запобігаючи ризику несанкціонованого доступу.</div>
                         </div>
-                        <div class="firewall__free title_fz18">Ця функція — <a href="#">безкоштовна</a></div>
+                        <div class="firewall__free">Ця функція — <a href="#">безкоштовна</a></div>
                     </div>
 
                     <div class="load">
                         <div class="table-item">
                             <div class="table-item__header">
                                 <div class="table-item__icon"><img src="icons/prices/5section/load.svg" alt="load"></div>
+                                <div class="table-item__icon-mob"><img src="icons/prices/5section/load_mob.svg" alt="load_mob"></div>
                                 <div class="table-item__title-wrapper">
-                                    <div class="table-item__subtitle">Load Balancer</div>
-                                    <div class="table-item__title title_fz46 title_fz46_black">Load Balancer</div>
+                                    <div class="table-item__subtitle" id="load">Load Balancer</div>
+                                    <div class="table-item__title">Load Balancer</div>
                                 </div>
                             </div>
-                            <div class="table-item__descr title_fz18">Балансувальники навантаження забезпечують масштабування додатків, гарантуючи при цьому високу продуктивність та доступність.
+                            <div class="table-item__descr">Балансувальники навантаження забезпечують масштабування додатків, гарантуючи при цьому високу продуктивність та доступність.
                             </div>
                             <div class="table-item__table-responsive">
                                 <table class="table-item__table table-item__table-load">
@@ -341,7 +368,7 @@
                             </div>
                             
                             <div class="table-item__infosub">
-                                <img src="icons/prices/1section/icon_blue.svg" alt="info">
+                                <a href="#"><img src="icons/prices/1section/icon_blue.svg" alt="info"></a>
                                 Ціна у гривнях за курсом НБУ на момент покупки
                             </div>
                             

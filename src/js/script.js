@@ -92,3 +92,21 @@ document.body.addEventListener('click', function(event) {
         item.classList.remove('main-header__menu_item-open');
     });
 });
+
+window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+
+    console.log(scrollDistance);
+
+    document.querySelectorAll('.table-item__icon').forEach((el, i) => {
+        if(el.offsetTop <= scrollDistance) {
+            document.querySelectorAll('.categories li').forEach((el) => {
+                if(el.classList.contains('active')) {
+                    el.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.categories li')[i].
+            classList.add('active');
+        }
+    });
+});
