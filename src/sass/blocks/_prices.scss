@@ -103,7 +103,7 @@
     }
 }
 
-.cloud {
+.prices {
     padding: 100px 0 80px 0;
     min-height: 835px;
     position: relative;
@@ -121,45 +121,54 @@
             gap: 0px;
         }
     }
-    &__bills {
-        padding: 20px;
-        background: #FCFBFC;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-        &_title {
-            font-weight: 500;
-            @media (max-width: 1200px) {
-                font-size: 18px;
-                line-height: 26px;
-            }
-            @media (max-width: 768px) {
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 24px;
-            }
+    &__right {
+        max-width: 792px;
+        @media (max-width: 992px) {
+            margin-top: 50px;
         }
-        @media (max-width:992px) {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 20px;
+        @media (max-width: 428px) {
+            margin-top: 30px;
+        }
+    }
+}
+.bills {
+    padding: 20px;
+    background: #FCFBFC;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    &__title {
+        font-weight: 500;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 26px;
         }
         @media (max-width: 768px) {
-            display: none;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
         }
-        &-out{
-            display: none;
-            @media (max-width: 768px) {
-                display: flex;
-                flex-direction: column;
-                max-width: 100%;
-                align-items: flex-start;
-                padding: 30px 20px;
-                gap: 12px;
-                background: #FCFBFC;
-            }
+    }
+    @media (max-width:992px) {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+    &-out{
+        display: none;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            align-items: flex-start;
+            padding: 30px 20px;
+            gap: 12px;
+            background: #FCFBFC;
         }
     }
     &__btn {
@@ -186,16 +195,8 @@
             }
         }
     }
-    &__right {
-        max-width: 792px;
-        @media (max-width: 992px) {
-            margin-top: 50px;
-        }
-        @media (max-width: 428px) {
-            margin-top: 30px;
-        }
-    }
 }
+
 .categories {
     position: sticky;
     top: 15px;
