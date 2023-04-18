@@ -1,5 +1,8 @@
 .accordion {
     margin-top: 40px;
+    @media(max-width: 992px) {
+        margin-top: 20px;
+    }
     --bs-accordion-border-radius: 10px;
     --bs-accordion-inner-border-radius: 10px;
     --bs-accordion-btn-icon: url(../../icons/cloud_instance/ic_arrow-down.svg);
@@ -9,10 +12,18 @@
 .accordion-button::after {
     content: '';
     background: url(../../icons/cloud_instance/ic_arrow-down.svg);
+    @media (max-width: 768px) {
+        content: '';
+        background: url(../../icons/cloud_instance/ic_arrow-down-mini.svg);
+    }
 }
 .accordion-button:not(.collapsed)::after {
     content: '';
     background: url(../../icons/cloud_instance/ic_arrow-down.svg);
+    @media (max-width: 768px) {
+        content: '';
+        background: url(../../icons/cloud_instance/ic_arrow-down-mini.svg);
+    }
 }
 .accordion-button:not(.collapsed) {
     box-shadow: none;
@@ -23,11 +34,25 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    @media (max-width: 428px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.accordion-body {
+    @media (max-width: 428px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 .accordion-item {
     margin-bottom: 24px;
     border: none;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
+
 .accordion-button.collapsed {
     font-style: normal;
     font-weight: 500;
@@ -35,12 +60,20 @@
     line-height: 24px;
     background: #F2F4F8;
     border-radius: 10px;
+    @media (max-width: 428px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 .accordion_descr {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     color: #1E1E1E;
+    @media (max-width: 428px) {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
 .accordion-item:first-of-type .accordion-button.collapsed {
     border-top-right-radius: none;
@@ -55,6 +88,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    @media (max-width: 428px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .accordion-collapse.collapse.show {

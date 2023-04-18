@@ -239,13 +239,31 @@
         min-height: 804px;
         padding: 100px 0;
         background: linear-gradient(161.97deg, #2457B8 11.67%, #5080E9 86.93%);
+        @media (max-width: 768px) {
+            padding: 50px 0;
+        }
         &_title {
             max-width: 800px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 46px;
+            line-height: 56px;
+            color: #FFFFFF;
+            @media (max-width: 428px){
+                font-size: 24px;
+                line-height: 32px;
+            }
+
         }
         &_wrapper {
             display: flex;
             justify-content: space-between;
             margin-top: 56px;
+            @media (max-width: 768px) {
+                margin-top: 30px;
+                flex-direction: column;
+                gap: 30px;
+            }
         }
         &_item {
             background: #fff;
@@ -256,6 +274,10 @@
             flex-direction: column;
             max-width: 342px;
             max-height: 380px;
+            @media (max-width: 768px) {
+                max-width: 100%;
+                gap: 10px;
+            }
             img {
                 width: 48px;
                 height: 48px;
@@ -264,18 +286,134 @@
     }
     &__documentation {
         padding: 80px 0 100px 0;
+        @media (max-width: 768px) {
+            padding: 50px 0 60px 0;
+        }
         &_wrapper {
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: 992px) {
+                flex-direction: column;
+                margin-top: 30px;
+            }
         }
         &_right {
             max-width: 792px;
         }
     }
+    &__promo {
+        padding: 100px 0;
+        @media(max-width: 768px) {
+            padding: 50px 0;
+            min-height: 346px;
+        }
+        @media(max-width: 428px) {
+            min-height: 277px;
+        }
+        background: #2457B8;
+        min-height: 368px;
+        position: relative;
+        overflow: hidden;
+        &_wrapper {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+            @media(max-width: 768px) {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+            @media(max-width: 428px) {
+                gap: 20px;
+            }
+        }
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 46px;
+            line-height: 56px;
+            color: #FFFFFF;
+            max-width: 702px;
+            @media(max-width: 768px) {
+                max-width: 100%;
+                font-size: 44px;
+            }
+            @media(max-width: 428px) {
+                font-size: 23px;
+                line-height: 32px;
+            }
+        }
+        &_btn {
+            margin: 0;
+        }
+        &_connect-link {
+            margin-top: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 0.7);
+            a {
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+                &:hover {
+                    color: #E0E7FC;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 231px;
+                    height: 2px;
+                    background: rgba(255, 255, 255, 0.2);
+                    z-index: 2;
+                    left: 1px;
+                    top: 19px;
+                }
+            }
+            @media(max-width: 768px) {
+                margin-top: 20px;
+            }
+        }
+        &_bg {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            @media(max-width: 768px) {
+                display: none;
+            }
+            &-tab {
+                display: none;
+                @media(max-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 90px;
+                }
+                @media(max-width: 428px) {
+                    display: none;
+                }
+            }
+            &-mob {
+                display: none;
+                @media(max-width: 428px) {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 90px;
+                }
+            }
+        }
+    }
 
 }
 .categories {
+    &__list {
+        &-cloud {
+            margin: 0;
+        }
+    }
     &-cloud {
         position: static;
     }
@@ -288,6 +426,7 @@
         }
     }
 }
+
 .documentation__list {
     margin: 0;
 }
