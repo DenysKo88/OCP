@@ -7,6 +7,7 @@
     <title>Cloud Instance</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -212,11 +213,119 @@
         </div>
     </section>
 
+    <section class="cloud__addition">
+        <div class="container">
+            <h2 class="cloud__addition_title title_fz46">Робіть більше за допомогою інструментів, які допоможуть убезпечити вашу інфраструктуру</h2>
+            <div class="cloud__addition_wrapper">
+                <div class="cloud__addition_item">
+                    <img src="icons/cloud_instance/ic backup.svg" alt="backup">
+                    <div class="cloud__addition_title title_fz24">Backups</div>
+                    <div class="cloud__addition_descr">Образи дисків ваших інстансів, що автоматично створюються один раз на тиждень за ціною 20% від вартості інстанса.</div>
+                    <a href="#" class="cloud__addition_link">Докладніше про Backups →</a>
+                </div>
+                <div class="cloud__addition_item">
+                    <img src="icons/cloud_instance/ic firewall.svg" alt="firewall">
+                    <div class="cloud__addition_title title_fz24">Firewall (FWaaS)</div>
+                    <div class="cloud__addition_descr">З легкістю захистіть свою інфраструктуру за допомогою безкоштовних хмарних брандмауерів. Ідеально підходить для проміжних та виробничих розгортань.</div>
+                    <a href="#" class="cloud__addition_link">Докладніше про Firewall →</a>
+                </div>
+                <div class="cloud__addition_item">
+                    <img src="icons/cloud_instance/ic snap.svg" alt="snapshot">
+                    <div class="cloud__addition_title title_fz24">Snapshots</div>
+                    <div class="cloud__addition_descr">Нашу систему можна використовувати для створення копій існуючих серверів і автоматизації розгортань.</div>
+                    <a href="#" class="cloud__addition_link">Докладніше про Snapshots →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cloud__documentation">
+        <div class="container">
+            <h2 class="cloud__documentation_title title_fz46 title_fz46_black">Документація</h2>
+            <div class="cloud__documentation_wrapper">
+                <div class="cloud__documentation_left">
+                    <nav class="categories categories-cloud">
+                        <ul class="categories__list categories__list-cloud documentation__list
+                        ">
+                            <li class="categories__item categories__item-cloud">
+                                <a href="#">База знань</a>
+                            </li>
+                            <li class="categories__item categories__item-cloud active">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="categories__item categories__item-cloud">
+                                <a href="#">Інструкції</a>
+                            </li>
+                            <li class="categories__item categories__item-cloud">
+                                <a href="#">API</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="cloud__documentation_right">
+                    <div class="accordion_descr">Ми зібрали всі важливі документи, інструкції та статті, щоб вам було зручно розпочати роботу з хмарними рішеннями OneCloudPlanet.</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Як виставляється рахунок за мої інстанси?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Чи стягуєте ви плату за зупинені інстанси?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ми зібрали всі важливі документи, інструкції та статті, щоб вам було зручно розпочати роботу з хмарними рішеннями OneCloudPlanet.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Які шаблони операційних систем ви пропонуєте?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Яка швидкість перевищення пропускної здатності?
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     @@include('_footer.html')
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
