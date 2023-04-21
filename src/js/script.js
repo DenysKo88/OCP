@@ -110,3 +110,18 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+$('.tab-container').on('click', '.cloud__tab',
+    function() {
+        const thisButton = $(this);
+        const parentContainer = thisButton.closest('.cloud__menu');
+
+        parentContainer.find('.cloud__tab').removeClass('cloud__tab_active');
+        thisButton.addClass('cloud__tab_active');
+
+        parentContainer.find('.cloud__content').removeClass('cloud__content_active');
+
+        const targetClass = thisButton.data('target');
+
+        parentContainer.find(targetClass).addClass('cloud__content_active');
+    });

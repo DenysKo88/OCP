@@ -36,25 +36,82 @@
 
     <section class="cloud__menu">
         <div class="container">
-            <ul class="cloud__tabs">
-                <li class="cloud__tab cloud__tab_active">Про продукт</li>
-                <li class="cloud__tab">Ціни</li>
-                <li class="cloud__tab">Доповнення</li>
-                <li class="cloud__tab">Документація</li>
-            </ul>
-        </div>
+            <div class="tab-container">
+                <ul class=" cloud__tabs tab-buttons">
+                    <li class="cloud__tab cloud__tab_active tab-button active" data-target=".tab-1">Про продукт</li>
+                    <li class="cloud__tab tab-button" data-target=".tab-2">Ціни</li>
+                    <li class="cloud__tab tab-button" data-target=".tab-3">Доповнення</li>
+                    <li class="cloud__tab tab-button" data-target=".tab-4">Документація</li>
+                </ul>
+            </div>    
+        </div>  
+         
         <div class="divider"></div>
-    </section>
 
-    <section class="cloud__about">
         <div class="cloud__left-hidden">
             <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
             <div class="cloud__dots-descr">Стабільний,<br> 
             швидкий і <br>
             масштабований</div>
         </div>
+        
         <div class="container">
-            <div class="cloud__first">
+            <div class="tabs-content">
+                <div class="cloud__first tab-1 cloud__content cloud__content_active">
+                    <div class="cloud__left">
+                        <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
+                        <div class="cloud__dots-descr">Стабільний,<br> 
+                        швидкий і <br>
+                        масштабований</div>
+                    </div>
+                    <div class="cloud__right">
+                        <p>Інстанс — це віртуальна машина, яка складається з комбінації ЦП, пам’яті та мережевих можливостей. <br><br>
+                        OneCloudPlanet дозволяє вибрати найкраще поєднання ресурсів відповідно до ваших вимог і навантажень.</p>
+                    </div>
+                </div>
+
+                <div class="cloud__first tab-2 cloud__content">
+                    <div class="cloud__left">
+                        <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
+                        <div class="cloud__dots-descr">Стабільний,<br> 
+                        швидкий і <br>
+                        масштабований</div>
+                    </div>
+                    <div class="cloud__right">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequuntur voluptatem eaque iure quibusdam, illum voluptates ea, quis ducimus natus minima dolorum dolorem obcaecati dignissimos error pariatur ratione? Provident, beatae.</p>
+                    </div>
+                </div>
+    
+                <div class="cloud__first tab-3 cloud__content">
+                    <div class="cloud__left">
+                        <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
+                        <div class="cloud__dots-descr">Стабільний,<br> 
+                        швидкий і <br>
+                        масштабований</div>
+                    </div>
+                    <div class="cloud__right">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta, repellendus eum inventore ipsa temporibus amet dicta, officiis blanditiis ut deserunt, ad autem maxime! Reiciendis culpa ducimus omnis doloremque excepturi!</p>
+                    </div>
+                </div>
+    
+                <div class="cloud__first tab-4 cloud__content">
+                    <div class="cloud__left">
+                        <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
+                        <div class="cloud__dots-descr">Стабільний,<br> 
+                        швидкий і <br>
+                        масштабований</div>
+                    </div>
+                    <div class="cloud__right">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim ipsa deleniti, quas repudiandae ducimus atque eos expedita asperiores cumque laboriosam molestiae voluptas reiciendis totam aliquam, mollitia in, eligendi nostrum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="cloud__about">
+        <div class="container">
+            <div class="cloud__first cloud__first-hidden">
                 <div class="cloud__left">
                     <div class="cloud__dots"><img src="icons/1_section/dots.svg" alt="dots"></div>
                     <div class="cloud__dots-descr">Стабільний,<br> 
@@ -66,7 +123,17 @@
                     OneCloudPlanet дозволяє вибрати найкраще поєднання ресурсів відповідно до ваших вимог і навантажень.</p>
                 </div>
             </div>
+            <div class="cloud__first_monitoring-wrapper">
+                <img src="icons/cloud_instance/ic-desktop.svg" alt="desctop" class="cloud__first_monitoring-icon">
+                <div class="cloud__first_monitoring-text">
+                    <div class="cloud__first_monitoring-title title_fz20_black title_fz20">Надається графік моніторингу ресурсів</div>
+                    <div class="cloud__first_monitoring-descr">Щоб допомогти вам спланувати використання ресурсів для вашого проекту, ми надаємо графік моніторингу ресурсів, який відображає використання екземплярів завантаження процесора, використання пам’яті, мережевих бітів, мережевого пакета, байтів диска та дискових операцій.</div>
+                </div>
+            </div>
         </div>
+
+
+
         <div class="cloud__second">
             <div class="container">
                 <div class="cloud__items">
@@ -103,7 +170,7 @@
                 <div class="cloud__prices_left">
                     <nav class="categories categories-cloud">
                         <ul class="categories__list categories__list-cloud">
-                            <li class="categories__item categories__item-cloud active">
+                            <li class="categories__item categories__item-cloud categories__item-cloud_active">
                                 <a href="#cloudcompute">Cloud Instances</a>
                             </li>
                         </ul>
@@ -250,7 +317,7 @@
                             <li class="categories__item categories__item-cloud">
                                 <a href="#">База знань</a>
                             </li>
-                            <li class="categories__item categories__item-cloud active">
+                            <li class="categories__item categories__item-cloud categories__item-cloud_active">
                                 <a href="#">FAQ</a>
                             </li>
                             <li class="categories__item categories__item-cloud">
