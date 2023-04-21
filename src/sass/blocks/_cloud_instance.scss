@@ -45,12 +45,16 @@
         }
     }
     &__menu {
+        position: relative;
         @media(max-width: 768px) {
             display: none;
         }
         @media (max-width: 576px) {
             display: block;
         }
+        ::-webkit-scrollbar {
+            display: none;
+            }
     }
 
     &__tabs {
@@ -524,7 +528,26 @@
     background: rgba(0, 0, 0, 0.2);
 }
 .tab-container {
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
+    width: 90%;
+    margin: 0 auto;
 }
-
+.arrow_left {
+    border: none;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    left: 10px;
+    position: absolute;
+    top: 7px;
+}
+.arrow_right{
+    border: none;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    right: 10px;
+    position: absolute;
+    top: 7px;
+}

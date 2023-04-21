@@ -125,3 +125,13 @@ $('.tab-container').on('click', '.cloud__tab',
 
         parentContainer.find(targetClass).addClass('cloud__content_active');
     });
+
+    $(document).ready(function() {
+        $('.arrow_right').on('click', function() {
+          $('.tab-container').animate( { scrollLeft: '+=200' }, 500);
+        });
+      
+        $('.arrow_left').on('click', function() {
+          $('.tab-container').animate( { scrollLeft: '-=200' }, 500);
+        });
+      });
